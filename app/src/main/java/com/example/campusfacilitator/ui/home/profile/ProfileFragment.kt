@@ -9,7 +9,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 
 import com.example.campusfacilitator.R
-import com.example.campusfacilitator.databinding.ProfileFragmentBinding
+import com.example.campusfacilitator.databinding.FragmentProfileBinding
 import org.kodein.di.android.x.kodein
 import org.kodein.di.KodeinAware
 import org.kodein.di.generic.instance
@@ -25,7 +25,7 @@ class ProfileFragment : Fragment(), KodeinAware {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding: ProfileFragmentBinding = DataBindingUtil.inflate(inflater, R.layout.profile_fragment, container, false)
+        val binding: FragmentProfileBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_profile, container, false)
 
         viewModel = ViewModelProvider(this, factory).get(ProfileViewModel::class.java)
         binding.viewmodel = viewModel

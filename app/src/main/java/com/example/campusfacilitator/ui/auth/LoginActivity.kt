@@ -48,6 +48,7 @@ class LoginActivity : AppCompatActivity(), AuthListener, KodeinAware {
                 }
             }
         })
+
     }
 
     override fun onStarted() {
